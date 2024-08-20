@@ -7,6 +7,8 @@
 3. [Dados](#dados)
 4. [Analisando as vendas da cafeteria](#analisando-as-vendas-da-cafeteria)
 5. [Conclusões](#conclusões-e-o-dashboard)
+6. [Ferramentas utilizadas](#ferramentas-utilizadas)
+7. [Contato](#contato)
 
 ## Introdução
 O dataset Coffee Shop Sales contém dados sobre a Maven Roasters, uma cafeteria ficticia operando em três localizações na cidade de New York. O conjunto de dados contém data e hora de transações, localização e detalhes sobre os produtos.
@@ -104,3 +106,11 @@ A Maven Roasters está em plena ascenção, e existe espaço para crescimento do
 - Existe uma tendência de queda das vendas ao fim do mês, é um período interessante para promoções regulares ou queima de queima de estoque.
 
 ![](doc/img/dashboard.png)
+
+## Ferramentas utilizadas
+![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
+## Contato
+- Email: andreluizlcons@gmail.com
+- Linkedin: https://www.linkedin.com/in/andreluizls1/
+- Telefone: +55 88 999934237
