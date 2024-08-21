@@ -40,8 +40,9 @@ Os dados tratam das vendas do primeiro semestre do ano de 2023, a _staff_ do Mav
 
 ##### Faturamento Total
 ```DAX
-faturamentoTotal = SUMX(
-    'Transactions',
+faturamentoTotal = 
+SUMX(
+    'Transactions', 
     'Transactions'[transaction_qty] * 'Transactions'[unit_price]
 )
 ```
@@ -49,22 +50,16 @@ faturamentoTotal = SUMX(
 ```DAX
 faturamentoMedio = DIVIDE(
     'Medidas'[faturamentoTotal],
-    COUNTROWS('Transactions')
+    COUNT('Transactions'[transaction_id])
 )
 ```
 ##### Unidades Vendidas
 ```DAX
-unidadesVendidas = SUMX(
-    'Transactions', 
-    'Transactions'[transaction_qty]
-)
+unidadesVendidas = SUM('Transactions'[transaction_qty])
 ```
 ##### Ticket médio
 ```DAX
-ticketMedio = 
-VAR faturamentoTotal = [faturamentoTotal]
-VAR unidadesVendidas = [unidadesVendidas]
-RETURN [faturamentoTotal] / unidadesVendidas
+ticketMedio = DIVIDE('Medidas'[faturamentoTotal], 'Medidas'[unidadesVendidas], 0)
 ```
 ### Visualizações
 
